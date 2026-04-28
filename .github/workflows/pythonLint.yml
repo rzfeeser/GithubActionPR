@@ -3,9 +3,9 @@ name: Python linting
 on: 
   - workflow_dispatch
 
-jobs:
-  runs-on: ubuntu-latest  
-  lintingOperation:
+jobs: 
+  lintingOperation:   # this is the name of a job
+    runs-on: ubuntu-latest   # this is the snowglobe to use for the work
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
