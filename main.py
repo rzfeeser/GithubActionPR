@@ -1,2 +1,2 @@
 print("Hello from Python world!")
-print( 'I love incorrect spacing' )
+print("I love correct spacing")
