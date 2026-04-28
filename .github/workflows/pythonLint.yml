@@ -1,10 +1,12 @@
 name: Python linting
-security-events: read
+
 on: 
   - workflow_dispatch
 
 jobs: 
   lintingOperation:   # this is the name of a job
+    permissions:
+      security-events: read
     runs-on: ubuntu-latest   # this is the snowglobe to use for the work
     steps:
       - uses: actions/checkout@v6
